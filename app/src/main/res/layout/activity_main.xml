@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zjun.demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--Single Choose-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single Choose: "/>
+
+        <com.zjun.widget.tagflowlayout.TagFlowLayout
+            android:id="@+id/tfl_tags_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#c7d4c8"
+            android:padding="10dp" />
+
+        <!--Multi Choose-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Multi Choose: "/>
+
+        <com.zjun.widget.tagflowlayout.TagFlowLayout
+            android:id="@+id/tfl_tags_multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#c7d4c8"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>
