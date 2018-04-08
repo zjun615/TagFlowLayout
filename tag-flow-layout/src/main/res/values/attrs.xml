@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TagFlowLayout">
+        <!--标签之间的水平间距-->
         <attr name="horizontalInterval" format="reference|dimension"/>
+        <!--标签之间的垂直间距-->
         <attr name="verticalInterval" format="reference|dimension"/>
     </declare-styleable>
 </resources>

@@ -227,17 +227,27 @@ public class TagFlowLayout extends ViewGroup implements OnDataChangedListener {
             this.mLayoutInflater = LayoutInflater.from(context);
         }
 
-        protected int getViewCount() {
-            return 0;
-        }
+        /**
+         * Set the count of tags by implement class
+         * @return the count of tags
+         */
+        protected abstract int getViewCount();
 
-        protected View onCreateView(LayoutInflater inflater, ViewGroup parent) {
-            return null;
-        }
+        /**
+         * You can create the tag view here
+         *
+         * @param inflater LayoutInflater
+         * @param parent This TagFlowLayout
+         * @return
+         */
+        protected abstract View onCreateView(LayoutInflater inflater, ViewGroup parent);
 
-        protected void onBindView(View view, int position) {
-
-        }
+        /**
+         * set the content for tag, eg. setText
+         * @param view
+         * @param position
+         */
+        protected abstract void onBindView(View view, int position);
 
         private void setOnDataChangedListener(OnDataChangedListener listener) {
             this.mOnDataChangedListener = listener;
